@@ -15,3 +15,5 @@ COPY . /app
 ENTRYPOINT [ "python" ]
 
 CMD [ "imageTransform.py" ]
+
+EXPOSE 3000
