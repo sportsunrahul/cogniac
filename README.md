@@ -1,6 +1,6 @@
-## Image Tranformation
----
-This project is built to perform various image tranformations:
+# Image Tranformation
+
+This project performs various image tranformations that are commonly used as a data preprocessing step in computer vision tasks. 
  - Image rotation
  - Gray 
  - Resize
@@ -47,7 +47,7 @@ Instructions to run:
     files: 
         image: required
     params:
-        Size: required
+        size: required
     ```   
 - Image Crop:
     ```
@@ -57,10 +57,10 @@ Instructions to run:
     files: 
         image: required
     params:
-        left: required
-        up: required
+        left : required
+        up   : required
         right: required
-        low: required
+        low  : required
     ```
 - Image Equalization:
     ```

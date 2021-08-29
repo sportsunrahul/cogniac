@@ -50,7 +50,6 @@ def resize_image():
     return: Resized image
     '''
 
-
     file = request.files['image']
     sz = float(request.values['size'])
     img = Image.open(file.stream)
@@ -101,15 +100,12 @@ def crop_image():
     return response(img)
 
 
-
-
 def response(img):
     imgByteArr = io.BytesIO()
     img.save(imgByteArr, format='PNG')
     imgByteArr.seek(0)
 
     return send_file(imgByteArr, mimetype="image/" + 'png')
-
 
 
 if __name__ == "__main__":
